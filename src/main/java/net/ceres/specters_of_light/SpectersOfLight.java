@@ -1,6 +1,8 @@
 package net.ceres.specters_of_light;
 
 import com.mojang.logging.LogUtils;
+import net.ceres.specters_of_light.item.ModCreativeModeTabs;
+import net.ceres.specters_of_light.item.Moditems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,6 +27,10 @@ public class SpectersOfLight
     public SpectersOfLight(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+
+        Moditems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
