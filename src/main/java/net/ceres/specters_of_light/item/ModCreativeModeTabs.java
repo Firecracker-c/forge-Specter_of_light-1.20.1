@@ -1,5 +1,6 @@
 package net.ceres.specters_of_light.item;
 
+import net.ceres.specters_of_light.Block.ModBlocks;
 import net.ceres.specters_of_light.SpectersOfLight;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -18,8 +19,11 @@ public class ModCreativeModeTabs
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.SHARD_OF_LIGHT.get()))
                     .title(Component.translatable("creativetab.specters_of_light_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.LIGHT_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_LIGHT_ORE.get());
                         output.accept(Moditems.SHARD_OF_LIGHT.get());
                         output.accept(Moditems.PEARL_OF_LIGHT.get());
+
                     } )
                     .build());
 
