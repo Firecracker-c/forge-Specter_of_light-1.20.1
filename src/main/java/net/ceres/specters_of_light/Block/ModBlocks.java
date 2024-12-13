@@ -2,10 +2,12 @@ package net.ceres.specters_of_light.Block;
 
 import net.ceres.specters_of_light.SpectersOfLight;
 import net.ceres.specters_of_light.item.Moditems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,10 +23,12 @@ public class ModBlocks
             DeferredRegister.create(ForgeRegistries.BLOCKS, SpectersOfLight.MOD_ID);
 
     public static final RegistryObject<Block> LIGHT_ORE = registerBlock("light_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).sound(SoundType.AMETHYST)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 8)));
 
     public static final RegistryObject<Block> DEEPSLATE_LIGHT_ORE = registerBlock("deepslate_light_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.AMETHYST)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3, 8)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {
