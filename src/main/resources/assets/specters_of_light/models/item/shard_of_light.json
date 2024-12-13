@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures":
-  {
-    "layer0": "specters_of_light:item/shard_of_light"
-  }
-}

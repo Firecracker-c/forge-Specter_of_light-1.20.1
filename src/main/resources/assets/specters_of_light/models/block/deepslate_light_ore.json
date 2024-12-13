@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures":
-  {
-    "all": "specters_of_light:block/deepslate_light_ore"
-  }
-}
