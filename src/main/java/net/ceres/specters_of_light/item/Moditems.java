@@ -16,6 +16,9 @@ public class Moditems
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PEARL_OF_LIGHT = ITEMS.register("pearl_of_light",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SPECTER = ITEMS.register("specter",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
 
     public static void register(IEventBus eventBus)
     {

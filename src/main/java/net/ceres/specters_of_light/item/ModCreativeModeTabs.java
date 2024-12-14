@@ -10,6 +10,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+
+
 public class ModCreativeModeTabs
 {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -23,6 +25,9 @@ public class ModCreativeModeTabs
                         output.accept(ModBlocks.DEEPSLATE_LIGHT_ORE.get());
                         output.accept(Moditems.SHARD_OF_LIGHT.get());
                         output.accept(Moditems.PEARL_OF_LIGHT.get());
+                        output.accept(Moditems.SPECTER.get());
+
+
 
                     } )
                     .build());
