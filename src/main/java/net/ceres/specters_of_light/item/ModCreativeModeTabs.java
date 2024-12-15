@@ -4,6 +4,7 @@ import net.ceres.specters_of_light.Block.ModBlocks;
 import net.ceres.specters_of_light.SpectersOfLight;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +27,9 @@ public class ModCreativeModeTabs
                         output.accept(Moditems.SHARD_OF_LIGHT.get());
                         output.accept(Moditems.PEARL_OF_LIGHT.get());
                         output.accept(Moditems.SPECTER.get());
+
+                        output.accept(Moditems.APODIXIS_SOLIDA.get());
+
 
 
 

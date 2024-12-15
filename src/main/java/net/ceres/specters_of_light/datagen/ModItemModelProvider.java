@@ -22,7 +22,12 @@ public class ModItemModelProvider extends ItemModelProvider
         simpleItem(Moditems.PEARL_OF_LIGHT);
     }
 
-
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item)
+    {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(SpectersOfLight.MOD_ID,"item/" + item.getId().getPath()));
+    }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item)
     {

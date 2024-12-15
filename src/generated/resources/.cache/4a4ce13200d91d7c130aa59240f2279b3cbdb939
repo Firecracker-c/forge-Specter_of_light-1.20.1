@@ -1,3 +1,4 @@
-// 1.20.1	2024-12-14T00:26:45.9996936	Tags for minecraft:block mod id specters_of_light
+// 1.20.1	2024-12-15T21:39:37.877312	Tags for minecraft:block mod id specters_of_light
 075ee935cdfd961bd473838dc9d0f0526ff90e21 data/minecraft/tags/blocks/mineable/pickaxe.json
 075ee935cdfd961bd473838dc9d0f0526ff90e21 data/minecraft/tags/blocks/needs_iron_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/specters_of_light/tags/blocks/needs_light_tool.json

@@ -2,6 +2,7 @@ package net.ceres.specters_of_light.datagen;
 
 import net.ceres.specters_of_light.Block.ModBlocks;
 import net.ceres.specters_of_light.SpectersOfLight;
+import net.ceres.specters_of_light.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -23,6 +24,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.LIGHT_ORE.get(),
                         ModBlocks.DEEPSLATE_LIGHT_ORE.get());
 
+        this.tag(ModTags.Blocks.NEEDS_LIGHT_TOOL);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.LIGHT_ORE.get(),

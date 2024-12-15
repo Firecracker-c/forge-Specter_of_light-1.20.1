@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_specter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "specters_of_light:specter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "specters_of_light:apodixis_solida"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_specter",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "specters_of_light:apodixis_solida"
+    ]
+  },
+  "sends_telemetry_event": false
+}
