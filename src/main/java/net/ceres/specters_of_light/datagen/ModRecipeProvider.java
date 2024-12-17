@@ -35,7 +35,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('I', Items.IRON_BLOCK)
                 .define('R', Items.REDSTONE)
                 .define('P', Moditems.PEARL_OF_LIGHT.get())
-                .unlockedBy(getHasName(Moditems.SHARD_OF_LIGHT.get()), has (Moditems.SHARD_OF_LIGHT.get()))
+                .unlockedBy(getHasName(Moditems.PEARL_OF_LIGHT.get()), has (Moditems.PEARL_OF_LIGHT.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Moditems.PEARL_OF_LIGHT.get())

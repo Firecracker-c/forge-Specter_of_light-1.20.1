@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shard_of_light": {
+    "has_pearl_of_light": {
       "conditions": {
         "items": [
           {
             "items": [
-              "specters_of_light:shard_of_light"
+              "specters_of_light:pearl_of_light"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_shard_of_light",
+      "has_pearl_of_light",
       "has_the_recipe"
     ]
   ],

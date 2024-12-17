@@ -1,0 +1,4 @@
+// 1.20.1	2024-12-17T21:12:01.2519342	Registries
+f7bce26ba8255f614675240c41d65a130ba0029d data/specters_of_light/forge/biome_modifier/add_light_ore.json
+1a951ef92e10bacfa2d70c8eb6c57b376ed0cd23 data/specters_of_light/worldgen/configured_feature/light_ore.json
+2d8599e59f84a4cbda69a7f770c4dd748529fd33 data/specters_of_light/worldgen/placed_feature/light_ore_placed.json
